@@ -9,6 +9,7 @@ import ContactForm from "../components/ContactForm.astro";
 import OurTeam from "../components/OurTeam.astro";
 import AboutUs from "../components/AboutUs.astro";
 import GirlCleaningTable from "../assets/images/girl-cleaning-table.jpeg";
+import Button from "../components/Button.astro";
 ---
 
 <Layout>
@@ -28,7 +29,10 @@ import GirlCleaningTable from "../assets/images/girl-cleaning-table.jpeg";
                 dolor interdum nulla, ut commodo diam libero vitae erat.Lo
             </p>
             <div class="buttons">
-                <button class="request_a_quote">Request a quote</button>
+                <Button
+                    title={"Request a quote"}
+                    onClick={console.log("Request a quote")}
+                />
                 <button class="learn-more">Learn more</button>
             </div>
         </div>

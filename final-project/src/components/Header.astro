@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import ddsgnr from "../assets/logos/ddsgnr.png";
+import Button from "./Button.astro";
 ---
 
 <header>
@@ -12,7 +13,7 @@ import ddsgnr from "../assets/logos/ddsgnr.png";
       <a href="/services">Services</a>
       <a href="/team">Teams</a>
       <a href="/contact">Contact</a>
-      <button class="request_quote">Request A Quote</button>
+      <Button title={"Request a quote"} />
     </div>
     <div class="hamburger_menu" id="hamburger">
       <span class="line line1"></span>
@@ -27,7 +28,7 @@ import ddsgnr from "../assets/logos/ddsgnr.png";
       <a href="/services">Services</a>
       <a href="/team">Teams</a>
       <a href="/contact">Contact</a>
-      <button class="request_quote">Request A Quote</button>
+      <Button title={"Request a quote"} />
     </div>
     <div class="informations">
       <div><strong>For emergency cases: 567 123 45 67</strong></div>
@@ -79,20 +80,20 @@ import ddsgnr from "../assets/logos/ddsgnr.png";
           color: black;
         }
 
-        button {
-          margin-left: 1rem;
-          width: 160px;
-          height: 40px;
-          font-size: 16px;
-          background-color: #000000;
-          color: white;
-          border-radius: 5px;
+        // button {
+        //   margin-left: 1rem;
+        //   width: 160px;
+        //   height: 40px;
+        //   font-size: 16px;
+        //   background-color: #000000;
+        //   color: white;
+        //   border-radius: 5px;
 
-          &:hover {
-            background-color: #333;
-            cursor: pointer;
-          }
-        }
+        //   &:hover {
+        //     background-color: #333;
+        //     cursor: pointer;
+        //   }
+        // }
       }
 
       .hamburger_menu {
